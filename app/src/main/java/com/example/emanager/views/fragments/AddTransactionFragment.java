@@ -47,8 +47,6 @@ public class AddTransactionFragment extends BottomSheetDialogFragment {
                              Bundle savedInstanceState) {
         binding = FragmentAddTransactionBinding.inflate(inflater);
 
-//        getActivity().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
         transaction = new Transaction();
 
         binding.incomeBtn.setOnClickListener(view -> {
@@ -128,6 +126,7 @@ public class AddTransactionFragment extends BottomSheetDialogFragment {
                 transaction.setAccount(account.getAccountName());
                 accountsDialog.dismiss();
             });
+
             dialogBinding.recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
             dialogBinding.recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL));
             dialogBinding.recyclerView.setAdapter(adapter);

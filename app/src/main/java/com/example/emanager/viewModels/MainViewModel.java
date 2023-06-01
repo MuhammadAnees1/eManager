@@ -133,6 +133,7 @@ public class MainViewModel extends AndroidViewModel {
         getTransactions(calendar);
     }
 
+//    for custom data add in recycleView
     public void addTransactions() {
         realm.beginTransaction();
         realm.copyToRealmOrUpdate(new Transaction(Constants.INCOME, "Business", "Cash", "Some note here", new Date(), 500, new Date().getTime()));
@@ -141,6 +142,7 @@ public class MainViewModel extends AndroidViewModel {
         realm.copyToRealmOrUpdate(new Transaction(Constants.INCOME, "Business", "Card", "Some note here", new Date(), 500, new Date().getTime()));
         realm.commitTransaction();
     }
+//
     void setupDatabase() {
         realm = Realm.getDefaultInstance();
     }
