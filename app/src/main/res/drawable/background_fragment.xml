@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#f6f9ff" /> <!-- Background color of the FrameLayout -->
+    <corners android:radius="16dp" /> <!-- Adjust the radius value as needed for the desired curvature -->
+</shape>
+
