@@ -46,6 +46,8 @@ public class Constants {
                 return R.color.cash_color;
             case "Card":
                 return R.color.card_color;
+             case "JazzCash":
+                return R.color.jazzCash_color;
             default:
                 return R.color.default_color;
         }

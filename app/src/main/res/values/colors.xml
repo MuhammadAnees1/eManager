@@ -24,6 +24,7 @@
     <color name="bank_color">#A8004175</color>
     <color name="cash_color">#A8007502</color>
     <color name="card_color">#A8750033</color>
+    <color name="jazzCash_color">#C6FF00</color>
     <color name="default_color">#A8303030</color>
 
 </resources>
